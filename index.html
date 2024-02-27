@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="Script.js">
-    </script>
+    
     <div class="header">
-        <h1>ROCK PAPER SCISSORS</div>h1>
+        <h1>ROCK PAPER SCISSORS</h1>
     </div>
-
+   <div class="GameScreen">
+    <div class="result">
+   <h3 id="you">you: </h3>
+   <h3 id="computer">Computer: </h3>
+</div>
+<div class="choices">
+    <div class="choice" id="r">
+        <img src="images/Rock.png" alt="rock" onclick="result('ROCK')">
+    </div>
+    <div class="choice" id="p">
+        <img src="images/paper.png" alt="paper" onclick="result('PAPER')">
+    </div>
+    <div class="choice" id="s">
+        <img src="images/scissors.png" alt="scissors" onclick="result('SCISSORS')">
+    </div>
+   </div>
+   <script src="Script.js">
+</script>
 </body>
 </html>

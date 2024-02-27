@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header , .choices, .result{
+    display: flex;
+    flex-direction: row;
+}
+.header{  
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(171, 171, 5);
+}
+.GameScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.result{
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 25%;
+    margin: 5%;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+.choices{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
