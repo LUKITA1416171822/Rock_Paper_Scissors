@@ -1,16 +1,19 @@
 body{
+    margin: 0px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(112, 13, 13);
 }
-.header , .choices, .result{
+.header , .choices, .score{
     display: flex;
     flex-direction: row;
 }
 .header{  
+    top: 0;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     background-color: rgb(171, 171, 5);
+    font-family: 'Press Start 2P', cursive;
 }
 .GameScreen{
     display: flex;
@@ -19,16 +22,34 @@ body{
     /* align-items: center; */
 }
 .result{
+    flex-direction: column;
+    display: flex;
+    background-color: royalblue;
+    border: 3px dotted black;
     justify-content: center; 
     align-items: center; 
-    padding: 10px;
-    margin-bottom: 10px;
-    gap: 25%;
-    margin: 5%;
+    gap: 45%;
+    margin-top: 2.5%;
+    font-size: 36px;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.score{
+    justify-content: center; 
+    align-items: center; 
+    gap: 45%;
+    margin: 0px;
 }
 img{
     width: 400px;
     height: 400px;
+    transition: box-shadow 0.3s ease;
+}
+img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .choices{
     justify-content: center;
